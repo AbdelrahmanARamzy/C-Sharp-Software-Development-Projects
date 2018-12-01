@@ -1,0 +1,86 @@
+D:\college\3rd year\2nd term\Clinical\final\final\final\bin\Debug\final.exe.config
+D:\college\3rd year\2nd term\Clinical\final\final\final\obj\Debug\final.csprojResolveAssemblyReference.cache
+D:\college\3rd year\2nd term\Clinical\final\final\final\obj\Debug\final.Form1.resources
+D:\college\3rd year\2nd term\Clinical\final\final\final\obj\Debug\final.Form2.resources
+D:\college\3rd year\2nd term\Clinical\final\final\final\obj\Debug\final.Properties.Resources.resources
+D:\college\3rd year\2nd term\Clinical\final\final\final\obj\Debug\final.csproj.GenerateResource.Cache
+D:\college\3rd year\2nd term\Clinical\final\final\final\bin\Debug\final.exe
+D:\college\3rd year\2nd term\Clinical\final\final\final\bin\Debug\final.pdb
+D:\college\3rd year\2nd term\Clinical\final\final\final\obj\Debug\final.exe
+D:\college\3rd year\2nd term\Clinical\final\final\final\obj\Debug\final.pdb
+C:\Users\Mahmoud\Desktop\final\final\bin\Debug\final.exe.config
+C:\Users\Mahmoud\Desktop\final\final\obj\Debug\final.exe
+C:\Users\Mahmoud\Desktop\final\final\obj\Debug\final.pdb
+C:\Users\Mahmoud\Desktop\final\final\bin\Debug\final.exe
+C:\Users\Mahmoud\Desktop\final\final\bin\Debug\final.pdb
+C:\Users\Mahmoud\Desktop\final\final\obj\Debug\final.csprojResolveAssemblyReference.cache
+C:\Users\Mahmoud\Desktop\final\final\obj\Debug\final.Form1.resources
+C:\Users\Mahmoud\Desktop\final\final\obj\Debug\final.Form2.resources
+C:\Users\Mahmoud\Desktop\final\final\obj\Debug\final.Properties.Resources.resources
+C:\Users\Mahmoud\Desktop\final\final\obj\Debug\final.csproj.GenerateResource.Cache
+C:\Users\Mahmoud\Desktop\final\final\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\user\Desktop\final\final\bin\Debug\final.exe.config
+C:\Users\user\Desktop\final\final\obj\Debug\final.exe
+C:\Users\user\Desktop\final\final\obj\Debug\final.pdb
+C:\Users\user\Desktop\final\final\bin\Debug\final.exe
+C:\Users\user\Desktop\final\final\bin\Debug\final.pdb
+C:\Users\user\Desktop\final\final\obj\Debug\final.csprojResolveAssemblyReference.cache
+C:\Users\user\Desktop\final\final\obj\Debug\final.Form1.resources
+C:\Users\user\Desktop\final\final\obj\Debug\final.Form2.resources
+C:\Users\user\Desktop\final\final\obj\Debug\final.Properties.Resources.resources
+C:\Users\user\Desktop\final\final\obj\Debug\final.csproj.GenerateResource.Cache
+E:\final\final\bin\Debug\final.exe.config
+E:\final\final\obj\Debug\final.exe
+E:\final\final\obj\Debug\final.pdb
+E:\final\final\bin\Debug\final.exe
+E:\final\final\bin\Debug\final.pdb
+E:\final\final\obj\Debug\final.csprojResolveAssemblyReference.cache
+E:\final\final\obj\Debug\final.Form1.resources
+E:\final\final\obj\Debug\final.Form2.resources
+E:\final\final\obj\Debug\final.Properties.Resources.resources
+E:\final\final\obj\Debug\final.csproj.GenerateResource.Cache
+E:\final\final\obj\Debug\final.Form10.resources
+E:\final\final\obj\Debug\final.Form3.resources
+E:\final\final\obj\Debug\final.Form4.resources
+E:\final\final\obj\Debug\final.Form11.resources
+E:\final\final\obj\Debug\final.Form12.resources
+E:\final\final\obj\Debug\final.Form13.resources
+E:\final 3omar_4_38\final\bin\Debug\final.exe.config
+E:\final 3omar_4_38\final\obj\Debug\final.exe
+E:\final 3omar_4_38\final\obj\Debug\final.pdb
+E:\Clinical\final 3omar_4_38\final\bin\Debug\final.exe.config
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.exe
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.pdb
+E:\Clinical\final 3omar_4_38\final\bin\Debug\final.exe
+E:\Clinical\final 3omar_4_38\final\bin\Debug\final.pdb
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.csprojResolveAssemblyReference.cache
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.Form2.resources
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.Form1.resources
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.Form10.resources
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.Form11.resources
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.Form12.resources
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.Form3.resources
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.Form4.resources
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.Properties.Resources.resources
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.csproj.GenerateResource.Cache
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\bin\Debug\final.exe.config
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.exe
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.pdb
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.csprojResolveAssemblyReference.cache
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.Form2.resources
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.Form1.resources
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.Form10.resources
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.Form11.resources
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.Form12.resources
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.Form13.resources
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.Form14.resources
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.Form3.resources
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.Form4.resources
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.Properties.Resources.resources
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\obj\Debug\final.csproj.GenerateResource.Cache
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\bin\Debug\final.exe
+C:\Users\Omar Ghalib\Documents\final 3omar_4_38\final\bin\Debug\final.pdb
+E:\Clinical\final 3omar_4_38\final\obj\Debug\final.Form14.resources
+F:\DESK TOP\Clinical\final 3omar_4_38\final\bin\Debug\final.exe.config
+F:\DESK TOP\Clinical\final 3omar_4_38\final\obj\Debug\final.exe
+F:\DESK TOP\Clinical\final 3omar_4_38\final\obj\Debug\final.pdb
