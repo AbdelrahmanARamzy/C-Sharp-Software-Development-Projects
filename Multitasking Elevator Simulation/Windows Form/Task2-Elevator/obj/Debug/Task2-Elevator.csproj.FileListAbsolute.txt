@@ -1,9 +1,0 @@
-C:\Users\Mahmoud\Desktop\OOP-Tasks\Task2-Elevator\Task2-Elevator\bin\Debug\Task2-Elevator.exe.config
-C:\Users\Mahmoud\Desktop\OOP-Tasks\Task2-Elevator\Task2-Elevator\bin\Debug\Task2-Elevator.exe
-C:\Users\Mahmoud\Desktop\OOP-Tasks\Task2-Elevator\Task2-Elevator\bin\Debug\Task2-Elevator.pdb
-C:\Users\Mahmoud\Desktop\OOP-Tasks\Task2-Elevator\Task2-Elevator\obj\Debug\Task2-Elevator.csprojResolveAssemblyReference.cache
-C:\Users\Mahmoud\Desktop\OOP-Tasks\Task2-Elevator\Task2-Elevator\obj\Debug\Task2_Elevator.Form1.resources
-C:\Users\Mahmoud\Desktop\OOP-Tasks\Task2-Elevator\Task2-Elevator\obj\Debug\Task2_Elevator.Properties.Resources.resources
-C:\Users\Mahmoud\Desktop\OOP-Tasks\Task2-Elevator\Task2-Elevator\obj\Debug\Task2-Elevator.csproj.GenerateResource.Cache
-C:\Users\Mahmoud\Desktop\OOP-Tasks\Task2-Elevator\Task2-Elevator\obj\Debug\Task2-Elevator.exe
-C:\Users\Mahmoud\Desktop\OOP-Tasks\Task2-Elevator\Task2-Elevator\obj\Debug\Task2-Elevator.pdb
