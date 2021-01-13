@@ -9,27 +9,21 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data.SqlTypes;
+
 namespace final
 {
     public partial class Form3 : Form
     {
         private Form4 frm4;
+
         private Form12 frm12;
+
         string R_Num;
+
         public Form3(string R_num)
         {
             InitializeComponent();
             R_Num = R_num;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void Form3_Load(object sender, EventArgs e)
@@ -132,22 +126,11 @@ namespace final
             WinAPI.AnimateWindow(this.Handle, 250, WinAPI.VER_POSITIVE);
         }
 
-        private void groupBox7_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox9_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection myConnection = new SqlConnection("Data Source=roomdb.cqqrtfvavnxp.us-east-2.rds.amazonaws.com,1433;Initial Catalog=Room_datasheet;User ID=clinical;Password=321654987");
             myConnection.Open();
 
-            /////////////////////////////////
             SqlCommand cmd1 = myConnection.CreateCommand();
             cmd1.CommandText = @" insert into Wall_Finishes (R_number) values ('" + R_Num + "')";
             cmd1.ExecuteNonQuery();
@@ -207,10 +190,6 @@ namespace final
             SqlCommand cmd15 = myConnection.CreateCommand();
             cmd15.CommandText = @" insert into Drainage (R_number) values ('" + R_Num + "')";
             cmd15.ExecuteNonQuery();
-            ////////////////////////////////////////////////
-
-
-
 
             SqlCommand cmd16 = myConnection.CreateCommand();
             if (checkBox1.Checked == true)
@@ -255,8 +234,6 @@ namespace final
                 cmd19.CommandText = @"UPDATE Wall_Finishes Set Special_Protection = 0 WHERE R_number = '" + R_Num + "'";
             }
             cmd19.ExecuteNonQuery();
-            //////////////////////////////////////////////
-
 
             SqlCommand cmd20 = myConnection.CreateCommand();
             if (checkBox9.Checked == true)
@@ -368,9 +345,6 @@ namespace final
             }
             cmd29.ExecuteNonQuery();
 
-
-
-            /////////////////////////////////////////
             SqlCommand cmd30 = myConnection.CreateCommand();
             if (checkBox5.Checked == true)
             {
@@ -403,10 +377,6 @@ namespace final
                 cmd32.CommandText = @"UPDATE Window Set Operable = 0 WHERE R_number = '" + R_Num + "'";
             }
             cmd32.ExecuteNonQuery();
-
-
-            ////////////////////////////////////////////
-
 
             SqlCommand cmd33 = myConnection.CreateCommand();
             if (checkBox39.Checked == true)
@@ -539,8 +509,6 @@ namespace final
                 cmd44.CommandText = @"UPDATE Storage_Component Set Open_Shelving_Full_height = 0 WHERE R_number = '" + R_Num + "'";
             }
             cmd44.ExecuteNonQuery();
-
-            //////////////////////////////////////////
 
             SqlCommand cmd45 = myConnection.CreateCommand();
             if (checkBox18.Checked == true)
@@ -772,10 +740,6 @@ namespace final
                 cmd65.CommandText = @"UPDATE Special_Considerations Set Exceptional_Loading_Ceilling = 0 WHERE R_number = '" + R_Num + "'";
             }
             cmd65.ExecuteNonQuery();
-            //////////////////////////////////////////
-
-
-
 
             SqlCommand cmd66 = myConnection.CreateCommand();
             if (checkBox51.Checked == true)
@@ -875,9 +839,6 @@ namespace final
                 cmd74.CommandText = @"UPDATE Special_Storage_Requirements Set Supplies = 0 WHERE R_number = '" + R_Num + "'";
             }
             cmd74.ExecuteNonQuery();
-            ////////////////////////////////////////
-
-
 
             SqlCommand cmd75 = myConnection.CreateCommand();
             if (checkBox60.Checked == true)
@@ -989,9 +950,6 @@ namespace final
             }
             cmd84.ExecuteNonQuery();
 
-            ////////////////////////////////////////////////////
-
-
             SqlCommand cmd85 = myConnection.CreateCommand();
             if (checkBox70.Checked == true)
             {
@@ -1046,10 +1004,6 @@ namespace final
                 cmd89.CommandText = @"UPDATE Alarm_Detection Set Gas_Detector = 0 WHERE R_number = '" + R_Num + "'";
             }
             cmd89.ExecuteNonQuery();
-
-            ///////////////////////////////////
-
-
 
             SqlCommand cmd90 = myConnection.CreateCommand();
             if (checkBox83.Checked == true)
@@ -1106,9 +1060,6 @@ namespace final
             }
             cmd94.ExecuteNonQuery();
 
-            ///////////////////////////////////////
-
-
             SqlCommand cmd95 = myConnection.CreateCommand();
             if (checkBox84.Checked == true)
             {
@@ -1152,10 +1103,6 @@ namespace final
                 cmd98.CommandText = @"UPDATE Electrical_Door Set Request_to_exit_for_Door_shunt = 0 WHERE R_number = '" + R_Num + "'";
             }
             cmd98.ExecuteNonQuery();
-
-            ////////////////////////////
-
-
 
             SqlCommand cmd99 = myConnection.CreateCommand();
             if (checkBox75.Checked == true)

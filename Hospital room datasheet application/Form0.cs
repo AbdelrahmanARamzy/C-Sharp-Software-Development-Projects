@@ -12,33 +12,20 @@ using System.Data.SqlTypes;
 
 namespace final
 {
-
     public partial class Form2 : Form
     {
         private Form14 frm14;
+
         public Form2()
         {
             InitializeComponent();
         }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void button2_Click(object sender, EventArgs e)
         {
             /*this.Hide();
             Form4 f4 = new Form4();
             f4.Show();*/
-
-            
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -46,21 +33,6 @@ namespace final
             this.Hide();
             Form1 f1 = new Form1();
             f1.Show();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -74,42 +46,16 @@ namespace final
              MessageBox.Show("Data added sucessfully");8*/
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        /*private void panel2_Paint_1(object sender, PaintEventArgs e)
-        {
-            groupBox1.BackColor = Color.Transparent;
-        }*/
-
         private void button1_Click_1(object sender, EventArgs e)
         {
-         
             this.Hide();
             Form11 f11 = new Form11();
-            f11.Show();
-
-            // panel1.Visible = false;
-            // panel2.Visible = true;
-
-            //if (panel2.Visible == false)
-              //  bunifuTransition2.ShowSync(panel2);
-            // else
-            //bunifuTransition2.HideSync(panel1);
-
-                
+            f11.Show();  
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
             panel1.Visible = true;
-            //from p1 to p2
-            /*if (panel1.Visible == false)
-                bunifuTransition2.ShowSync(panel1);
-            else
-                bunifuTransition2.HideSync(panel2);*/
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -138,40 +84,11 @@ namespace final
             timer1.Start();
         }
 
-
-        /* private void button5_Click_1(object sender, EventArgs e)
-         {
-             //from p3 to p2
-             if (panel3.Visible == false)
-                 bunifuTransition1.ShowSync(panel3);
-             else
-                 bunifuTransition1.HideSync(panel2);
-         }
-
-         private void button8_Click(object sender, EventArgs e)
-         {
-             //from p2 to p3
-             if (panel2.Visible == false)
-                 bunifuTransition1.ShowSync(panel2);
-             else
-                 bunifuTransition1.HideSync(panel3);
-         }*/
-
         private void button4_Click(object sender, EventArgs e)
         {
             Form14 frm14 = new Form14(textBox1.Text, comboBox1.Text);
             this.Hide();
             frm14.Show();
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -237,56 +154,6 @@ namespace final
             MessageBox.Show("Data added sucessfully");*/
         }
 
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox14_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-           
-            
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-           /* if (panel3.Visible == false)
-                bunifuTransition2.ShowSync(panel3);
-            else
-                bunifuTransition2.HideSync(panel2);*/
-
-        }
-
-        private void button5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged_2(object sender, EventArgs e)
-        {
-
-        }
-
         private void button8_Click_1(object sender, EventArgs e)
         {
             SqlConnection myConnection = new SqlConnection("Data Source=roomdb.cqqrtfvavnxp.us-east-2.rds.amazonaws.com,1433;Initial Catalog=Room_datasheet;User ID=clinical;Password=321654987;MultipleActiveResultSets = True;");
@@ -294,6 +161,7 @@ namespace final
             SqlDataReader dr;
             SqlDataReader dr2;
             myConnection.Open();
+
             if (comboBox2.Text == "Equipment")
             {
                 cmd = new SqlCommand("select * From Additional_items ", myConnection);
@@ -314,6 +182,7 @@ namespace final
                 dr.Close();
                 count_result.Text = count.ToString();
             }
+
             if (comboBox2.Text == "Furniture")
             {
                 cmd = new SqlCommand("select * From Additional_items ", myConnection);

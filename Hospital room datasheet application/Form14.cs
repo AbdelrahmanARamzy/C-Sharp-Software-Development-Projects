@@ -31,6 +31,7 @@ namespace final
             SqlCommand cmd;
             SqlDataReader dr;
             myConnection.Open();
+
             if (choice_ == "Additional items")
             {
                 cmd = new SqlCommand("select * From Additional_items where R_number =  '" + R_num_ + "' ", myConnection);
@@ -46,6 +47,7 @@ namespace final
                 }
                 dr.Close();
             }
+
             if (choice_ == "Alarm Detection")
             {
                 cmd = new SqlCommand("select * From Alarm_Detection where R_number =  '" + R_num_ + "' ", myConnection);
@@ -61,6 +63,7 @@ namespace final
                 }
                 dr.Close();
             }
+
             if (choice_ == "Alarm fire")
             {
                 cmd = new SqlCommand("select * From Alarm_fire where R_number =  '" + R_num_ + "' ", myConnection);
@@ -73,164 +76,165 @@ namespace final
                 dr.Close();
                
             }
-                if (choice_ == "Architectural DATA")
-                {
-                    cmd = new SqlCommand("select * From Architectural_Data where R_number =  '" + R_num_ + "' ", myConnection);
-                    dr = cmd.ExecuteReader();
 
-                    while (dr.Read())
-                    {
-                        listBox1.Items.Add("Door width: " + dr["Door_width"].ToString());
-                        listBox1.Items.Add("Door lock: " + dr["Door_lock"].ToString());
-                        listBox1.Items.Add("Door Material: " + dr["Door_Material"].ToString());
-                        listBox1.Items.Add("Ceiling: " + dr["Ceiling"].ToString());
-                        listBox1.Items.Add("Racks: " + dr["Racks"].ToString());
-                        listBox1.Items.Add("Hooks: " + dr["Hooks"].ToString());
-                        listBox1.Items.Add("Boards: " + dr["Boards"].ToString());
-                        listBox1.Items.Add("Tracks: " + dr["Tracks"].ToString());
-                        listBox1.Items.Add("Rails: " + dr["Rails"].ToString());
-                        listBox1.Items.Add("Mirrors width: " + dr["Mirrors_width"].ToString());
-                        listBox1.Items.Add("Mirrors height: " + dr["Mirrors_height"].ToString());
-                }
-                dr.Close();
-                    
-                }
-                if (choice_ == "Ceiling finishes")
-                {
-                    cmd = new SqlCommand("select * From Ceiling_Finishes where R_number =  '" + R_num_ + "' ", myConnection);
-                    dr = cmd.ExecuteReader();
-
-                    while (dr.Read())
-                    {
-                        listBox1.Items.Add("Acoustic: " + dr["Acoustic"].ToString());
-                        listBox1.Items.Add("Washable: " + dr["Washable"].ToString());
-                        listBox1.Items.Add("Special: " + dr["Special"].ToString());
-                        listBox1.Items.Add("Height: " + dr["Height"].ToString());
-                        listBox1.Items.Add("Other: " + dr["Other"].ToString());
-                }
-                dr.Close();
-                        
-                    }
-                if (choice_ == "Clock system")
-                {
-                    cmd = new SqlCommand("select * From Clock_System where R_number =  '" + R_num_ + "' ", myConnection);
-                    dr = cmd.ExecuteReader();
-
-                    while (dr.Read())
-                    {
-                        listBox1.Items.Add("Synchronized: " + dr["Synchronized"].ToString());
-                        listBox1.Items.Add("Stand_Alone: " + dr["Stand_Alone"].ToString());
-                        listBox1.Items.Add("Clock 24 Hour: " + dr["Clk_24_Hour"].ToString());
-                        listBox1.Items.Add("Clock 12 Hour: " + dr["Clk_12_Hour"].ToString());
-                        listBox1.Items.Add("Elapsed Time: " + dr["Elapsed_Time"].ToString());
-                }
-        dr.Close();
-                            
-                }
-                if (choice_ == "Communications DATA")
-                {
-                    cmd = new SqlCommand("select * From Communications_Data where R_number =  '" + R_num_ + "' ", myConnection);
-                    dr = cmd.ExecuteReader();
-
-                    while (dr.Read())
-                    {
-                        listBox1.Items.Add("Bedhead Consoles: " + dr["Bedhead_Consoles"].ToString());
-                        listBox1.Items.Add("Closed Circuit TV: " + dr["Closed_Circuit_TV"].ToString());
-                        listBox1.Items.Add("Computer Terminal: " + dr["Computer_Terminal"].ToString());
-                        listBox1.Items.Add("Computer Printer: " + dr["Computer_Printer"].ToString());
-                        listBox1.Items.Add("Call System Emergency: " + dr["Call_System_Emergency"].ToString());
-                        listBox1.Items.Add("Call System Audio: " + dr["Call_System_Audio"].ToString());
-                        listBox1.Items.Add("Call System Audio Visual: " + dr["Call_System_Audio_Visual"].ToString());
-                        listBox1.Items.Add("Patient Monitoring: " + dr["Patient_Monitoring"].ToString());
-                        listBox1.Items.Add("Code Blue Cardiac: " + dr["Code_Blue_Cardiac"].ToString());
-                        listBox1.Items.Add("Code White Panic: " + dr["Code_White_Panic"].ToString());
-                        listBox1.Items.Add("Telephone: " + dr["Telephone"].ToString());
-                        listBox1.Items.Add("Dictation: " + dr["Dictation"].ToString());
-                        listBox1.Items.Add("Intercom: " + dr["Intercom"].ToString());
-                        listBox1.Items.Add("Television: " + dr["Television"].ToString());
-                        listBox1.Items.Add("Data: " + dr["Data"].ToString());
-                        listBox1.Items.Add("Security TV: " + dr["Security_TV"].ToString());
-                        listBox1.Items.Add("Access Control: " + dr["Access_Control"].ToString());
-                        listBox1.Items.Add("Pocket Paging: " + dr["Pocket_Paging"].ToString());
-                        listBox1.Items.Add("Public Address: " + dr["Public_Address"].ToString());
-                        listBox1.Items.Add("Other: " + dr["Other"].ToString());
-    }
-    dr.Close();
-                                
-                }
-
-                if (choice_ == "Drainage")
-                {
-                    cmd = new SqlCommand("select * From Drainage where R_number =  '" + R_num_ + "' ", myConnection);
-                    dr = cmd.ExecuteReader();
-
-                    while (dr.Read())
-                    {
-                        listBox1.Items.Add("Sanitary: " + dr["Sanitary"].ToString());
-                        listBox1.Items.Add("Acid: " + dr["Acid"].ToString());
-                        listBox1.Items.Add("Radioisotopes: " + dr["Radioisotopes"].ToString());
-                        listBox1.Items.Add("Grease: " + dr["Grease"].ToString());
-                        listBox1.Items.Add("Oil: " + dr["Oil"].ToString());
-                        listBox1.Items.Add("Solvents: " + dr["Solvents"].ToString());
-                        listBox1.Items.Add("Plaster: " + dr["Plaster"].ToString());
-                        listBox1.Items.Add("Floor Drain: " + dr["Floor_Drain"].ToString());
-                        listBox1.Items.Add("Housekeeping Vacuum: " + dr["Housekeeping_Vacuum"].ToString());
-}
-dr.Close();
-                                    
-                }
-
-                if (choice_ == "Electrical door")
-                {
-                    cmd = new SqlCommand("select * From Electrical_Door where R_number =  '" + R_num_ + "' ", myConnection);
-                    dr = cmd.ExecuteReader();
-
-                    while (dr.Read())
-                    {
-                        listBox1.Items.Add("Magnetic Door Position Switch: " + dr["Magnetic_Door_Position_Switch"].ToString());
-                        listBox1.Items.Add("Electronic Door Locking Hardware: " + dr["Electronic_Door_Locking_Hardware"].ToString());
-                        listBox1.Items.Add("Automatic Door Opener: " + dr["Automatic_Door_Opener"].ToString());
-                        listBox1.Items.Add("Request to exit for Door shunt: " + dr["Request_to_exit_for_Door_shunt"].ToString());
-}
-dr.Close();
-                                        
-  }
-    if (choice_ == "Fixture")
-    {
-        cmd = new SqlCommand("select * From Fixture where R_number =  '" + R_num_ + "' ", myConnection);
-        dr = cmd.ExecuteReader();
-
-        while (dr.Read())
-        {
-            listBox1.Items.Add("Fixture Fittings:" + dr["Fixture_Fittings"].ToString());
-            listBox1.Items.Add("Single Bowl Sink length: " + dr["Single_Bowl_Sink_length"].ToString());
-            listBox1.Items.Add("Single Bowl Sink width: " + dr["Single_Bowl_Sink_width"].ToString());
-            listBox1.Items.Add("Single Bowl Sink height: " + dr["Single_Bowl_Sink_height"].ToString());
-            listBox1.Items.Add("Double Bowl Sink height: " + dr["Double_Bowl_Sink_height"].ToString());
-            listBox1.Items.Add("Double Bowl Sink Width: " + dr["Double_Bowl_Sink_Width"].ToString());
-            listBox1.Items.Add("Double Bowl Sink length: " + dr["Double_Bowl_Sink_length"].ToString());
-            listBox1.Items.Add("Accessories: " + dr["Accessories"].ToString());
-}
-dr.Close();
-                                            
-    }
-        if (choice_ == "Floor finishes")
-        {
-            cmd = new SqlCommand("select * From Floor_Finishes where R_number =  '" + R_num_ + "' ", myConnection);
-            dr = cmd.ExecuteReader();
-
-            while (dr.Read())
+            if (choice_ == "Architectural DATA")
             {
-                listBox1.Items.Add("Water Impervious: " + dr["Water_Impervious"].ToString());
-                listBox1.Items.Add("Resilient: " + dr["Resilient"].ToString());
-                listBox1.Items.Add("Carpet: " + dr["Carpet"].ToString());
-                listBox1.Items.Add("Chemical Resistant: " + dr["Chemical_Resistant"].ToString());
-                listBox1.Items.Add("Non skid: " + dr["Non_skid"].ToString());
-}
-dr.Close();
-                                                
+                cmd = new SqlCommand("select * From Architectural_Data where R_number =  '" + R_num_ + "' ", myConnection);
+                dr = cmd.ExecuteReader();
 
-        }
+                while (dr.Read())
+                {
+                    listBox1.Items.Add("Door width: " + dr["Door_width"].ToString());
+                    listBox1.Items.Add("Door lock: " + dr["Door_lock"].ToString());
+                    listBox1.Items.Add("Door Material: " + dr["Door_Material"].ToString());
+                    listBox1.Items.Add("Ceiling: " + dr["Ceiling"].ToString());
+                    listBox1.Items.Add("Racks: " + dr["Racks"].ToString());
+                    listBox1.Items.Add("Hooks: " + dr["Hooks"].ToString());
+                    listBox1.Items.Add("Boards: " + dr["Boards"].ToString());
+                    listBox1.Items.Add("Tracks: " + dr["Tracks"].ToString());
+                    listBox1.Items.Add("Rails: " + dr["Rails"].ToString());
+                    listBox1.Items.Add("Mirrors width: " + dr["Mirrors_width"].ToString());
+                    listBox1.Items.Add("Mirrors height: " + dr["Mirrors_height"].ToString());
+                }
+                dr.Close();
+            }
+
+            if (choice_ == "Ceiling finishes")
+            {
+                cmd = new SqlCommand("select * From Ceiling_Finishes where R_number =  '" + R_num_ + "' ", myConnection);
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    listBox1.Items.Add("Acoustic: " + dr["Acoustic"].ToString());
+                    listBox1.Items.Add("Washable: " + dr["Washable"].ToString());
+                    listBox1.Items.Add("Special: " + dr["Special"].ToString());
+                    listBox1.Items.Add("Height: " + dr["Height"].ToString());
+                    listBox1.Items.Add("Other: " + dr["Other"].ToString());
+                }
+                dr.Close();
+
+            }
+
+            if (choice_ == "Clock system")
+            {
+                cmd = new SqlCommand("select * From Clock_System where R_number =  '" + R_num_ + "' ", myConnection);
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    listBox1.Items.Add("Synchronized: " + dr["Synchronized"].ToString());
+                    listBox1.Items.Add("Stand_Alone: " + dr["Stand_Alone"].ToString());
+                    listBox1.Items.Add("Clock 24 Hour: " + dr["Clk_24_Hour"].ToString());
+                    listBox1.Items.Add("Clock 12 Hour: " + dr["Clk_12_Hour"].ToString());
+                    listBox1.Items.Add("Elapsed Time: " + dr["Elapsed_Time"].ToString());
+                }
+                dr.Close();
+            }
+
+            if (choice_ == "Communications DATA")
+            {
+                cmd = new SqlCommand("select * From Communications_Data where R_number =  '" + R_num_ + "' ", myConnection);
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    listBox1.Items.Add("Bedhead Consoles: " + dr["Bedhead_Consoles"].ToString());
+                    listBox1.Items.Add("Closed Circuit TV: " + dr["Closed_Circuit_TV"].ToString());
+                    listBox1.Items.Add("Computer Terminal: " + dr["Computer_Terminal"].ToString());
+                    listBox1.Items.Add("Computer Printer: " + dr["Computer_Printer"].ToString());
+                    listBox1.Items.Add("Call System Emergency: " + dr["Call_System_Emergency"].ToString());
+                    listBox1.Items.Add("Call System Audio: " + dr["Call_System_Audio"].ToString());
+                    listBox1.Items.Add("Call System Audio Visual: " + dr["Call_System_Audio_Visual"].ToString());
+                    listBox1.Items.Add("Patient Monitoring: " + dr["Patient_Monitoring"].ToString());
+                    listBox1.Items.Add("Code Blue Cardiac: " + dr["Code_Blue_Cardiac"].ToString());
+                    listBox1.Items.Add("Code White Panic: " + dr["Code_White_Panic"].ToString());
+                    listBox1.Items.Add("Telephone: " + dr["Telephone"].ToString());
+                    listBox1.Items.Add("Dictation: " + dr["Dictation"].ToString());
+                    listBox1.Items.Add("Intercom: " + dr["Intercom"].ToString());
+                    listBox1.Items.Add("Television: " + dr["Television"].ToString());
+                    listBox1.Items.Add("Data: " + dr["Data"].ToString());
+                    listBox1.Items.Add("Security TV: " + dr["Security_TV"].ToString());
+                    listBox1.Items.Add("Access Control: " + dr["Access_Control"].ToString());
+                    listBox1.Items.Add("Pocket Paging: " + dr["Pocket_Paging"].ToString());
+                    listBox1.Items.Add("Public Address: " + dr["Public_Address"].ToString());
+                    listBox1.Items.Add("Other: " + dr["Other"].ToString());
+                }
+                dr.Close();
+            }
+
+            if (choice_ == "Drainage")
+            {
+                cmd = new SqlCommand("select * From Drainage where R_number =  '" + R_num_ + "' ", myConnection);
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    listBox1.Items.Add("Sanitary: " + dr["Sanitary"].ToString());
+                    listBox1.Items.Add("Acid: " + dr["Acid"].ToString());
+                    listBox1.Items.Add("Radioisotopes: " + dr["Radioisotopes"].ToString());
+                    listBox1.Items.Add("Grease: " + dr["Grease"].ToString());
+                    listBox1.Items.Add("Oil: " + dr["Oil"].ToString());
+                    listBox1.Items.Add("Solvents: " + dr["Solvents"].ToString());
+                    listBox1.Items.Add("Plaster: " + dr["Plaster"].ToString());
+                    listBox1.Items.Add("Floor Drain: " + dr["Floor_Drain"].ToString());
+                    listBox1.Items.Add("Housekeeping Vacuum: " + dr["Housekeeping_Vacuum"].ToString());
+                }
+                dr.Close();
+            }
+
+            if (choice_ == "Electrical door")
+            {
+                cmd = new SqlCommand("select * From Electrical_Door where R_number =  '" + R_num_ + "' ", myConnection);
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    listBox1.Items.Add("Magnetic Door Position Switch: " + dr["Magnetic_Door_Position_Switch"].ToString());
+                    listBox1.Items.Add("Electronic Door Locking Hardware: " + dr["Electronic_Door_Locking_Hardware"].ToString());
+                    listBox1.Items.Add("Automatic Door Opener: " + dr["Automatic_Door_Opener"].ToString());
+                    listBox1.Items.Add("Request to exit for Door shunt: " + dr["Request_to_exit_for_Door_shunt"].ToString());
+                }
+                dr.Close();
+            }
+
+            if (choice_ == "Fixture")
+            {
+                cmd = new SqlCommand("select * From Fixture where R_number =  '" + R_num_ + "' ", myConnection);
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    listBox1.Items.Add("Fixture Fittings:" + dr["Fixture_Fittings"].ToString());
+                    listBox1.Items.Add("Single Bowl Sink length: " + dr["Single_Bowl_Sink_length"].ToString());
+                    listBox1.Items.Add("Single Bowl Sink width: " + dr["Single_Bowl_Sink_width"].ToString());
+                    listBox1.Items.Add("Single Bowl Sink height: " + dr["Single_Bowl_Sink_height"].ToString());
+                    listBox1.Items.Add("Double Bowl Sink height: " + dr["Double_Bowl_Sink_height"].ToString());
+                    listBox1.Items.Add("Double Bowl Sink Width: " + dr["Double_Bowl_Sink_Width"].ToString());
+                    listBox1.Items.Add("Double Bowl Sink length: " + dr["Double_Bowl_Sink_length"].ToString());
+                    listBox1.Items.Add("Accessories: " + dr["Accessories"].ToString());
+                }
+                dr.Close();
+            }
+
+            if (choice_ == "Floor finishes")
+            {
+                cmd = new SqlCommand("select * From Floor_Finishes where R_number =  '" + R_num_ + "' ", myConnection);
+                dr = cmd.ExecuteReader();
+
+                while (dr.Read())
+                {
+                    listBox1.Items.Add("Water Impervious: " + dr["Water_Impervious"].ToString());
+                    listBox1.Items.Add("Resilient: " + dr["Resilient"].ToString());
+                    listBox1.Items.Add("Carpet: " + dr["Carpet"].ToString());
+                    listBox1.Items.Add("Chemical Resistant: " + dr["Chemical_Resistant"].ToString());
+                    listBox1.Items.Add("Non skid: " + dr["Non_skid"].ToString());
+                }
+                dr.Close();
+
+
+            }
+
             if (choice_ == "Gas")
             {
                 cmd = new SqlCommand("select * From Gas where R_number =  '" + R_num_ + "' ", myConnection);
@@ -251,9 +255,6 @@ dr.Close();
                 dr.Close();
             }
 
-
-            //////////////////////////////
-
             if (choice_ == "Lighting")
             {
                 cmd = new SqlCommand("select * From Lighting where R_number =  '" + R_num_ + "' ", myConnection);
@@ -272,8 +273,6 @@ dr.Close();
                 dr.Close();
             }
 
-            /////////////////////////////////
-
             if (choice_ == "Mechanical DATA")
             {
                 cmd = new SqlCommand("select * From Mechanical_Data where R_number =  '" + R_num_ + "' ", myConnection);
@@ -289,9 +288,6 @@ dr.Close();
                 }
                 dr.Close();
             }
-
-            /////////////////////////////////////
-
 
             if (choice_ == "Room information")
             {
@@ -314,10 +310,6 @@ dr.Close();
                 }
                 dr.Close();
             }
-
-
-            /////////////////////////////////////
-
 
             if (choice_ == "Special Considerations")
             {
@@ -352,8 +344,6 @@ dr.Close();
                 dr.Close();
             }
 
-            /////////////////////////////////////////
-
             if (choice_ == "Special storage requirements")
             {
                 cmd = new SqlCommand("select * From Special_Storage_Requirements where R_number =  '" + R_num_ + "' ", myConnection);
@@ -373,9 +363,6 @@ dr.Close();
                 }
                 dr.Close();
             }
-
-            //////////////////////////////////////////////
-
 
             if (choice_ == "Storage component")
             {
@@ -401,9 +388,6 @@ dr.Close();
                 dr.Close();
             }
 
-
-            /////////////////////////////////
-
             if (choice_ == "Wall finishes")
             {
                 cmd = new SqlCommand("select * From Wall_Finishes where R_number =  '" + R_num_ + "' ", myConnection);
@@ -419,9 +403,6 @@ dr.Close();
                 }
                 dr.Close();
             }
-
-            ////////////////////////////////////
-
 
             if (choice_ == "Water")
             {
@@ -446,9 +427,6 @@ dr.Close();
                 dr.Close();
             }
 
-
-            //////////////////////////////////////////////
-
             if (choice_ == "Window")
             {
                 cmd = new SqlCommand("select * From Window where R_number =  '" + R_num_ + "' ", myConnection);
@@ -462,9 +440,6 @@ dr.Close();
                 }
                 dr.Close();
             }
-
-
-            //////////////////////////////////////////////////
 
             if (choice_ == "Work surface")
             {

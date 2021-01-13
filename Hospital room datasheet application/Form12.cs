@@ -16,6 +16,7 @@ namespace final
         private Form11 frm11;
         private Form3 frm3;
         string R_num_;
+
         public Form12(string R_num)
         {
             InitializeComponent();
@@ -53,20 +54,11 @@ namespace final
                                  values ('" + R_num_ + "')";
             cmd5.ExecuteNonQuery();
 
-            /*SqlCommand cmd6 = myConnection.CreateCommand();
-            cmd6.CommandText = @" insert into Lighting (R_number,Other)
-                                 values ('" + R_num_ + "','" + textBox10.Text + "')";
-            cmd6.ExecuteNonQuery();*/
-
             SqlCommand cmd7 = myConnection.CreateCommand();
             cmd7.CommandText = @" insert into Mechanical_Data (R_number)
                                  values ('" + R_num_ + "')";
             cmd7.ExecuteNonQuery();
 
-            /*SqlCommand cmd8 = myConnection.CreateCommand();
-            cmd8.CommandText = @" insert into Special_Considerations (R_number,Exceptional_Loading_Floor,Exceptional_Loading_Wall,Exceptional_Loading_Ceilling,other)
-                                 values ('" + R_num_ + "','" + textBox11.Text + "','" + textBox12.Text + "','" + textBox13.Text + "','" + textBox14.Text + "')";
-            cmd8.ExecuteNonQuery();*/
             this.Hide();
             Form3 frm3 = new Form3(R_num_);
             frm3.Show();

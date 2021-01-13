@@ -16,30 +16,15 @@ namespace final
     {
         private Form3 frm3;
         string R_num_;
+
         public Form10(string R_num)
         {
             InitializeComponent();
             R_num_ = R_num;
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form10_Load(object sender, EventArgs e)
         {
-            
             label1.BackColor = Color.Transparent;
             label2.BackColor = Color.Transparent;
             label3.BackColor = Color.Transparent;
@@ -57,11 +42,6 @@ namespace final
             label15.BackColor = Color.Transparent;
             label16.BackColor = Color.Transparent;
             WinAPI.AnimateWindow(this.Handle, 250, WinAPI.VER_POSITIVE);
-        }
-
-        private void Door_width_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void button7_Click(object sender, EventArgs e)

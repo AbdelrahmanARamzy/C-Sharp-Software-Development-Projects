@@ -16,6 +16,7 @@ namespace final
     {
         private Form12 frm12;
         private Form2 frm2;
+
         public Form11()
         {
             InitializeComponent();
@@ -54,16 +55,6 @@ namespace final
                                  values ('" + textBox2.Text + "','" + textBox19.Text + "','" + textBox18.Text + "')";
                 cmd3.ExecuteNonQuery();
 
-                /*SqlCommand cmd4 = myConnection.CreateCommand();
-                cmd4.CommandText = @" insert into Communications_Data (R_number,Computer_Printer,Computer_Terminal,Other)
-                                 values ('" + textBox2.Text + "','" + textBox22.Text + "','" + textBox21.Text + "','" + textBox20.Text + "')";
-                cmd4.ExecuteNonQuery();
-
-                SqlCommand cmd5 = myConnection.CreateCommand();
-                cmd5.CommandText = @" insert into Ceiling_Finishes (R_number,Height)
-                                 values ('" + textBox2.Text + "','" + textBox23.Text + "')";
-                cmd5.ExecuteNonQuery();*/
-
                 SqlCommand cmd6 = myConnection.CreateCommand();
                 cmd6.CommandText = @" insert into Clock_System (R_number)
                                  values ('" + textBox2.Text + "')";
@@ -77,7 +68,6 @@ namespace final
                 this.Hide();
                 Form12 frm12 = new Form12(textBox2.Text);
                 frm12.Show();
-
             }
             else
             {

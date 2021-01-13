@@ -20,10 +20,11 @@ namespace final
             textBox2.PasswordChar = '*';
         }
 
-
-        private void label2_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-
+            label1.BackColor = Color.Transparent;
+            label2.BackColor = Color.Transparent;
+            WinAPI.AnimateWindow(this.Handle, 150, WinAPI.BLEND);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -35,48 +36,20 @@ namespace final
                                 FROM [dbo].[Users]
             WHERE [User_ID]='" + textBox1.Text + "' and [User_Password]='" + textBox2.Text + "'";
 
-            SqlDataReader rdr = cmd.ExecuteReader();
+            SqlDataReader reader = cmd.ExecuteReader();
 
-            if (rdr.Read())
+            if (!reader.Read())
             {
-                // MessageBox.Show("Welcome");
-                //Form2 objForm2 = new Form2();
-                //objForm2.Show();
-
-                timer2.Start();
-
+                MessageBox.Show("Invalid username or password!");
+                return;
             }
-            else
-                MessageBox.Show("Invalid username or password");
-        }
 
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            label1.BackColor = Color.Transparent;
-            label2.BackColor = Color.Transparent;
-            WinAPI.AnimateWindow(this.Handle, 150, WinAPI.BLEND);
-        }
-
-        private void textBox1_TextChanged_1(object sender, EventArgs e)
-        {
-        
+            timer2.Start();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //Environment.Exit(1);
             timer1.Start();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-        
         }
 
         private void timer1_Tick(object sender, EventArgs e)

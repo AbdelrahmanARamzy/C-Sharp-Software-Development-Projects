@@ -17,17 +17,66 @@ namespace final
         private Form3 frm3;
         private Form10 frm10;
         string R_Num;
+
         public Form4(string R_num)
         {
             InitializeComponent();
             R_Num = R_num;
         }
 
+        private void Form4_Load(object sender, EventArgs e)
+        {
+            label1.BackColor = Color.Transparent;
+            checkBox1.BackColor = Color.Transparent;
+            checkBox2.BackColor = Color.Transparent;
+            checkBox3.BackColor = Color.Transparent;
+            checkBox4.BackColor = Color.Transparent;
+            checkBox5.BackColor = Color.Transparent;
+            checkBox6.BackColor = Color.Transparent;
+            checkBox7.BackColor = Color.Transparent;
+            checkBox8.BackColor = Color.Transparent;
+            checkBox9.BackColor = Color.Transparent;
+            checkBox10.BackColor = Color.Transparent;
+            checkBox11.BackColor = Color.Transparent;
+            checkBox12.BackColor = Color.Transparent;
+            checkBox13.BackColor = Color.Transparent;
+            checkBox14.BackColor = Color.Transparent;
+            checkBox15.BackColor = Color.Transparent;
+            checkBox16.BackColor = Color.Transparent;
+            checkBox17.BackColor = Color.Transparent;
+            checkBox18.BackColor = Color.Transparent;
+            checkBox19.BackColor = Color.Transparent;
+            checkBox20.BackColor = Color.Transparent;
+            checkBox21.BackColor = Color.Transparent;
+            checkBox22.BackColor = Color.Transparent;
+            checkBox23.BackColor = Color.Transparent;
+            checkBox24.BackColor = Color.Transparent;
+            checkBox25.BackColor = Color.Transparent;
+            checkBox26.BackColor = Color.Transparent;
+            checkBox27.BackColor = Color.Transparent;
+            checkBox28.BackColor = Color.Transparent;
+            checkBox29.BackColor = Color.Transparent;
+            checkBox30.BackColor = Color.Transparent;
+            checkBox31.BackColor = Color.Transparent;
+            checkBox32.BackColor = Color.Transparent;
+            checkBox33.BackColor = Color.Transparent;
+            checkBox34.BackColor = Color.Transparent;
+            checkBox35.BackColor = Color.Transparent;
+            checkBox36.BackColor = Color.Transparent;
+            checkBox37.BackColor = Color.Transparent;
+            checkBox38.BackColor = Color.Transparent;
+            checkBox39.BackColor = Color.Transparent;
+            checkBox40.BackColor = Color.Transparent;
+            checkBox41.BackColor = Color.Transparent;
+            checkBox42.BackColor = Color.Transparent;
+
+            WinAPI.AnimateWindow(this.Handle, 250, WinAPI.VER_POSITIVE);
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             SqlConnection myConnection = new SqlConnection("Data Source=roomdb.cqqrtfvavnxp.us-east-2.rds.amazonaws.com,1433;Initial Catalog=Room_datasheet;User ID=clinical;Password=321654987");
             myConnection.Open();
-            ///////////////////////
 
             SqlCommand cmd1 = myConnection.CreateCommand();
             cmd1.CommandText = @" insert into Drainage (R_number) values ('" + R_Num + "')";
@@ -44,9 +93,6 @@ namespace final
             SqlCommand cmd4 = myConnection.CreateCommand();
             cmd4.CommandText = @" insert into Floor_Finishes (R_number) values ('" + R_Num + "')";
             cmd4.ExecuteNonQuery();
-            ////////////////////////////
-
-
 
             SqlCommand cmd5 = myConnection.CreateCommand();
             if (checkBox10.Checked == true)
@@ -147,10 +193,6 @@ namespace final
             }
             cmd13.ExecuteNonQuery();
 
-            /////////////////////////////////////
-
-
-
             SqlCommand cmd14 = myConnection.CreateCommand();
             if (checkBox42.Checked == true)
             {
@@ -249,9 +291,6 @@ namespace final
                 cmd22.CommandText = @"UPDATE Gas Set Shop_Compressed_Air = 0 WHERE R_number = '" + R_Num + "'";
             }
             cmd22.ExecuteNonQuery();
-
-            //////////////////////////////
-
 
             SqlCommand cmd23 = myConnection.CreateCommand();
             if (checkBox15.Checked == true)
@@ -462,10 +501,6 @@ namespace final
             }
             cmd41.ExecuteNonQuery();
 
-            /////////////////////////////////////////////////////
-
-
-
             SqlCommand cmd42 = myConnection.CreateCommand();
             if (checkBox1.Checked == true)
             {
@@ -524,7 +559,6 @@ namespace final
             Form10 frm10 = new Form10(R_Num);
             this.Hide();
             frm10.Show();
-            /////////////////////////////////
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -544,55 +578,6 @@ namespace final
             this.Hide();
             Form2 frm2 = new Form2();
             frm2.Show();
-        }
-
-        private void Form4_Load(object sender, EventArgs e)
-        {
-            label1.BackColor = Color.Transparent;
-            checkBox1.BackColor = Color.Transparent;
-            checkBox2.BackColor = Color.Transparent;
-            checkBox3.BackColor = Color.Transparent;
-            checkBox4.BackColor = Color.Transparent;
-            checkBox5.BackColor = Color.Transparent;
-            checkBox6.BackColor = Color.Transparent;
-            checkBox7.BackColor = Color.Transparent;
-            checkBox8.BackColor = Color.Transparent;
-            checkBox9.BackColor = Color.Transparent;
-            checkBox10.BackColor = Color.Transparent;
-            checkBox11.BackColor = Color.Transparent;
-            checkBox12.BackColor = Color.Transparent;
-            checkBox13.BackColor = Color.Transparent;
-            checkBox14.BackColor = Color.Transparent;
-            checkBox15.BackColor = Color.Transparent;
-            checkBox16.BackColor = Color.Transparent;
-            checkBox17.BackColor = Color.Transparent;
-            checkBox18.BackColor = Color.Transparent;
-            checkBox19.BackColor = Color.Transparent;
-            checkBox20.BackColor = Color.Transparent;
-            checkBox21.BackColor = Color.Transparent;
-            checkBox22.BackColor = Color.Transparent;
-            checkBox23.BackColor = Color.Transparent;
-            checkBox24.BackColor = Color.Transparent;
-            checkBox25.BackColor = Color.Transparent;
-            checkBox26.BackColor = Color.Transparent;
-            checkBox27.BackColor = Color.Transparent;
-            checkBox28.BackColor = Color.Transparent;
-            checkBox29.BackColor = Color.Transparent;
-            checkBox30.BackColor = Color.Transparent;
-            checkBox31.BackColor = Color.Transparent;
-            checkBox32.BackColor = Color.Transparent;
-            checkBox33.BackColor = Color.Transparent;
-            checkBox34.BackColor = Color.Transparent;
-            checkBox35.BackColor = Color.Transparent;
-            checkBox36.BackColor = Color.Transparent;
-            checkBox37.BackColor = Color.Transparent;
-            checkBox38.BackColor = Color.Transparent;
-            checkBox39.BackColor = Color.Transparent;
-            checkBox40.BackColor = Color.Transparent;
-            checkBox41.BackColor = Color.Transparent;
-            checkBox42.BackColor = Color.Transparent;
-           
-            WinAPI.AnimateWindow(this.Handle, 250, WinAPI.VER_POSITIVE);
         }
     }
 }
