@@ -180,7 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::final.Properties.Resources.Untitled_1;
+            this.BackgroundImage = global::HospitalRoomApplication.Properties.Resources.Untitled_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1065, 615);
             this.Controls.Add(this.button7);

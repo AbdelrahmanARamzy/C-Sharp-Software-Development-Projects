@@ -661,7 +661,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.BackgroundImage = global::final.Properties.Resources.forward_128___Copy;
+            this.button2.BackgroundImage = global::HospitalRoomApplication.Properties.Resources.forward_128___Copy;
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.Location = new System.Drawing.Point(751, 564);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
@@ -687,7 +687,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Image = global::final.Properties.Resources.Untitled_1;
+            this.label2.Image = global::HospitalRoomApplication.Properties.Resources.Untitled_1;
             this.label2.Location = new System.Drawing.Point(276, 1);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(427, 101);
@@ -699,7 +699,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::final.Properties.Resources.Untitled_1;
+            this.BackgroundImage = global::HospitalRoomApplication.Properties.Resources.Untitled_1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(953, 621);
             this.Controls.Add(this.label2);

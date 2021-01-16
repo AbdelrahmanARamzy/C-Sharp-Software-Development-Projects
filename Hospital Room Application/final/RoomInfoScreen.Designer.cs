@@ -1044,7 +1044,7 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button6.BackgroundImage = global::final.Properties.Resources.forward_128;
+            this.button6.BackgroundImage = global::HospitalRoomApplication.Properties.Resources.forward_128;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button6.Location = new System.Drawing.Point(1260, 582);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
@@ -1059,7 +1059,7 @@
             this.label24.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label24.Image = global::final.Properties.Resources.Untitled_1;
+            this.label24.Image = global::HospitalRoomApplication.Properties.Resources.Untitled_1;
             this.label24.Location = new System.Drawing.Point(1, 1);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(342, 117);
@@ -1070,7 +1070,7 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.BackgroundImage = global::final.Properties.Resources.forward_128___Copy;
+            this.button1.BackgroundImage = global::HospitalRoomApplication.Properties.Resources.forward_128___Copy;
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.Location = new System.Drawing.Point(1183, 582);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
@@ -1084,7 +1084,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::final.Properties.Resources.Untitled_1;
+            this.BackgroundImage = global::HospitalRoomApplication.Properties.Resources.Untitled_1;
             this.ClientSize = new System.Drawing.Size(1335, 638);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label24);

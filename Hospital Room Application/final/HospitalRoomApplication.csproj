@@ -7,8 +7,8 @@
     <ProjectGuid>{2DF656DD-F081-4D1B-A755-035736983185}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>final</RootNamespace>
-    <AssemblyName>final</AssemblyName>
+    <RootNamespace>HospitalRoomApplication</RootNamespace>
+    <AssemblyName>HospitalRoomApplication</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
